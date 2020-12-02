@@ -1,0 +1,31 @@
+{
+  "name": "ls-manager",
+  "version": "1.0.0",
+  "author": "kebab-case",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flazzarotto/ls-manager.git"
+  },
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/flazzarotto/ls-manager/issues"
+  },
+  "homepage": "https://github.com/flazzarotto/ls-manager",
+  "keywords": [
+    "localStorage",
+    "manager",
+    "stringify",
+    "parse",
+    "json",
+    "object"
+  ],
+  "scripts": {
+    "build": "babel src -d dist"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7"
+  },
+  "main": "dist/ls-manager.js"
+}
