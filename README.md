@@ -8,7 +8,7 @@ ls-manager
 
 ### "Simple" use (basic JSON encoding)
 ```js
-import lsManager from '@kc/ls-manager/src/ls-manager'
+import lsManager from '@kc/ls-manager'
 
 const ls = lsManager()
 
@@ -28,6 +28,9 @@ otherValue = ls.getItem(key)
 // will display: Object { a: "tsoin-tsoin", testUpdate: "tralala" }
 console.log(otherValue)
 ```
+
+N.B.: ls-manager also supports require syntax (which doesn't help since you don't have access to `window`
+with node).
 
 ### Use your very own encoder / decoder
 ```js
