@@ -8,7 +8,7 @@ ls-manager
 
 ### "Simple" use (basic JSON encoding)
 ```js
-import lsManager from '@kc/ls-manager'
+import lsManager from '@kebab-case/ls-manager'
 
 const ls = lsManager()
 
