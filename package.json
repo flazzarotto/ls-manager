@@ -1,6 +1,6 @@
 {
 	"name": "@kebab-case/ls-manager",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"author": "kebab-case",
 	"repository": {
 		"type": "git",
@@ -25,10 +25,24 @@
 	"devDependencies": {
 		"@babel/cli": "^7.12.8",
 		"@babel/core": "^7.12.9",
-		"@babel/preset-env": "^7.12.7"
+		"@babel/preset-env": "^7.12.7",
+		"babel-eslint": "^10.1.0"
 	},
 	"main": "./dist/ls-manager.js",
 	"module": "./src/ls-manager.js",
 	"description": "This tool allow to simply get and set objects, arrays etc. directly into the window.localStorage, without worrying about parsing / stringifying data.",
-	"private": false
+	"private": false,
+	"eslintConfig": {
+		"root": true,
+		"env": {
+			"node": true
+		},
+		"extends": [
+			"eslint:recommended"
+		],
+		"parserOptions": {
+			"parser": "babel-eslint"
+		},
+		"rules": {}
+	}
 }
